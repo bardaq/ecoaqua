@@ -1,0 +1,28 @@
+@import '../settings/colors';
+#terms-component{
+	h4{ font-size: 35px;}
+	position: relative;
+	// text-align: center;
+	background: $blue;
+	color: white;
+	transition: background .7s, color .7s;
+	.terms-item{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 90vh;
+	}
+	.terms-item__text{
+		z-index: 2;
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.terms-item__img{
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		top: 10%;
+	}
+}

@@ -1,0 +1,23 @@
+#nav-component
+	nav#nav-desktop
+		a.brand(href='#')
+			img(src="img/logo-min.png", alt="logo")
+			| EcoAqua
+		.menu-list
+			a.menu-item#nav-about-us(href='/about.html') О нас
+			a.menu-item(href='/terms-and-conditions.html#') Условия
+			a.menu-item(href='#calculator-anchor') Калькулятор
+			a.menu-item.btn.btn-outline(href='#product-component') Заказать фильтр
+
+	// mobile burger
+	nav#nav-mobile.top-right.open
+		a(href='/index.html#product-component').disc.l1
+			div Заказть
+		a#nav-about-us(href='#calculator-anchor').disc.l2
+			div Калькулятор
+		a(href='/terms-and-conditions.html').disc.l3
+			div Условия
+		a#nav-about-us(href='/about.html').disc.l4
+			div О нас
+		a.disc.l5.toggle
+			| Меню

@@ -1,0 +1,18 @@
+#calculator-component
+	.container
+		form.calculator
+			.inputs
+				.calculator__input-group.calculator__input-group_people
+					label(for="calculator__peoples") Человек <br>в семье:
+					input(type="text" value="3")#calculator__peoples
+				.calculator__input-group.calculator__input-group_liters
+					label(for="calculator__peoples") Литров<br>на каждого:
+					input(type="text" value="1.5")#calculator__liters
+				.calculator__input-group.calculator__input-group_price
+					label(for="calculator__peoples") Стоимость<br>литра:
+					input(type="text" value="40")#calculator__price
+			.calculator__result
+				include ../partial/counter.pug
+				p Столько вы тратите на воду в&nbsp;год.
+
+		p.calculator-description Введите, сколько человек в семье, сколько выпивают за день и стоимость литра воды. Стоит добавить, сколько воды еще уходит на приготовление еды.<br/><br/> Фильтр стоит до <b>15000 ₽</b> + расходники меняются раз в год за 2500 ₽. Посчитайте, насколько фильтр дешевле. При этом вы будете пить самую полезную воду из доступных в городских условиях!

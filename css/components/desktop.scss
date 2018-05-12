@@ -1,0 +1,70 @@
+/*
+*
+*
+* Desktop > 1024
+*
+*
+*/
+
+
+@media ( min-width: 1024px ) {
+/* -------------------------------
+* TYPOGRAPHY
+*------------------------------- */
+	h1 {
+		font-size: 5rem;
+		line-height: 5rem;
+	}
+
+
+
+
+/* -------------------------------
+* INTRO
+*------------------------------- */
+	#intro-component{
+		padding-top: 7em;
+		.container{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.offer { width: 50%; }
+		.product-img { order: 1; width: 50%; }
+		.cta{
+			margin-top: 2em;
+			h3{ padding-top: 4em; }
+		}
+	}
+
+/* -------------------------------
+* TERMS SECTIONS
+*------------------------------- */
+
+
+
+/* -------------------------------
+* CALCULATOR
+*------------------------------- */
+	#calculator-component{
+		.container{ flex-direction: row; }
+		.inputs { padding-right:25%; }
+		.calculator__result{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-items: center;
+			p { margin: 0 0 0 2em;}
+		}
+		.calculator, .calculator-description{ width: 50%; margin-top: 0;}
+	}
+
+
+
+
+}
+
+@media ( min-height: 769px ) {
+	#video{ position: relative; bottom: -50px; }
+}

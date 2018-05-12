@@ -1,0 +1,61 @@
+////
+/// Links & buttons
+///
+/// @group Elements
+///
+////
+@import '../settings/colors';
+
+button,
+a {
+  text-decoration: none;
+  color: $color-link;
+  transition: all .3s;
+  cursor: pointer;;
+  &:hover { text-decoration: underline; }
+}
+
+.btn{
+	display: inline-block;
+	padding: .5em 1.5em;
+	min-width: 150px;
+	max-width: 300px;
+	transition: all .3s;
+	margin: 0.5em 0;
+	border-radius: 3em;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 600;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.btn-outline{
+	background-color: transparent;
+	color: $white;
+	border: solid 1px $white;
+	&:hover{ color: $dark-blue !important; background: $white; text-decoration: none;}
+}
+.btn-white{
+	height: 3em;
+	line-height: 1.8em;
+	background-color: $white;
+	color: $blue;
+	border: solid 1px $white;
+	font-size: 20px;
+	&:hover{ color: $white !important; background: transparent; text-decoration: none;}
+}
+.btn-blue{
+	height: 3em;
+	line-height: 1.8em;
+	background-color: #1297d6;
+	color: #fff;
+	border: solid 1px #1297d6;
+	font-size: 20px;
+	&:hover{ color: #1297d6 !important; background: transparent; text-decoration: none;}
+}
+
+button {
+  background-color: transparent;
+  color: $color-link;
+}

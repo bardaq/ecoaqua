@@ -1,0 +1,70 @@
+@import '../settings/colors';
+#product-video-story-component{
+	position: relative;
+	padding: 5em 0;
+	background: $blue;
+	color: white;
+	overflow: hidden;
+	height: 2000px;
+	transition: background, .7s, color .7s;
+	.title{
+		font-size: 2.3em;
+		letter-spacing: -2px;
+		line-height: 1em;
+		font-weight: 800;
+	}
+	.PVS__frame{
+		margin: 0;
+		padding: 1em;
+		background: rgba(248, 248, 248, 0.9);
+		position: relative;
+		text-align: left;
+		padding-left: .5em;
+		z-index: 999;
+		.title{
+			display:inline;
+			margin: 0
+		}
+		.step{
+			display: none;
+		}
+	}
+
+	#PVS__frame0{
+		position: relative;
+		margin: 0 auto;
+		opacity: 0;
+		top: 0;
+		background: none;
+		.title {
+			position: absolute;
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	#PVS__frame1{
+		margin: 0 auto;
+		top: 200px;
+	}
+
+	#video-container {
+		position: absolute;
+		margin: auto;
+		top:50px; left: -1px; bottom: auto; right: auto;
+		box-sizing: border-box;
+		width: 100%;
+		pointer-events: none;
+		video{
+			pointer-events: none;
+			opacity: 0;
+			transition: opacity .7s;
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+			width: 100%;
+		}
+		.showVideo{ opacity: 1; }
+	}
+
+
+}

@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+		title EcoAqua о нас
+		meta(name="description" content="EcoAqua Правила и условия сайта")
+		meta(charset="utf-8")
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		meta(name="viewport", content=", width=device-width, initial-scale=1")
+
+		link(rel="shortcut icon", href="/img/favicon.ico")
+		link(rel="apple-touch-icon", href="/img/favicon.ico")
+		link(rel="stylesheet", href="/css/main.css")
+
+
+
+	body#body
+		include ../partial/nav.pug
+		.fullwidth
+			.about
+				h1 О нас
+				p На рынке с 2016 года. Занимаемся поставкой фильтров в Польше, Украине, Россие. С 2018 Являемся партнерами и дистрибюторами мембран  FilmTec USA.  С предложениями и вопросами о партнерстве обращайтесь в наш главный офиса в Варшаве: +48&nbsp;(22)&nbsp;810&nbsp;00&nbsp;12
+				a(href="index.html").btn.btn-blue В магазин
+			.map-container#map-container
+				#map
+
+		include ../partial/footer.pug
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		script( src='https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAP0gjpkyy4L_1oAyXgd7x_pzITMKn8feM' )
+		script( src='/js/about.js')

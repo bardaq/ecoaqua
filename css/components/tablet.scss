@@ -1,0 +1,334 @@
+/*
+*
+*
+* Tablets 700 - 1024
+*
+*
+*/
+@import '../settings/colors';
+
+@media (min-width: 700px ) {
+/* -------------------------------
+* TYPOGRAPHY
+*------------------------------- */
+	h1 {
+		font-size: 3.6rem;
+		line-height: 3.6rem;
+	}
+
+
+/* -------------------------------
+* GENERAL
+*------------------------------- */
+	.container{
+		background: transparent;
+		padding: 0 10%;
+		overflow: hidden;
+	}
+
+	.simple-text-container{
+		padding: 5em;
+	}
+
+
+
+
+/* -------------------------------
+* NAVIGATION
+*------------------------------- */
+	#nav-mobile { display: none; }
+	#nav-desktop {
+		position: fixed;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 1em;
+		z-index: 990000000;
+		font-weight: 600;
+		font-size: 14px;
+		a {
+			position: relative;
+			color: #fff;
+			margin: 0 1.5em;
+			&:hover{
+				opacity: .5;
+				text-decoration: none;
+			}
+		}
+		.btn:hover{
+			background: #fff;
+			opacity: 1;
+			color: #1297d6 !important;
+		}
+		a.brand{
+			img{ margin-right: .7em; }
+			display: flex !important;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			font-size: 18px;
+			font-weight: 800;
+		}
+
+		&.dark {
+			a{
+				color: #273032 !important;
+				border-color: #273032 !important;
+			}
+			.btn-outline:hover{
+				color: white !important; background: #273032 !important;;
+			}
+		}
+	}
+
+
+
+
+/* -------------------------------
+* INTRO
+*------------------------------- */
+	#intro-component{
+		padding-top: 7em;
+		.container{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.offer { width: 50%; }
+		.product-img {
+			order: 1;
+			width: 50%;
+			margin-top: 4em;
+		}
+			.cta{
+				margin-top: 2em;
+				h3{ padding-top: 4em; }
+		}
+	}
+
+
+
+/* -------------------------------
+* CALCULATOR
+*------------------------------- */
+	#calculator-component{
+		.calculator__result{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-items: center;
+			p { margin: 0 0 0 2em;}
+		}
+	}
+
+
+/* -------------------------------
+* PRODUCT STORY
+*------------------------------- */
+#product-video-story-component{
+	padding: 5em 0;
+	.title{ font-size: 4em; }
+	.PVS__frame{
+		padding: 1em;
+		text-align: left !important;
+		padding-left: 10em;
+		max-width: 600px;
+		.step{
+			display: block;
+			font-size: 300px;
+			font-weight: 800;
+			opacity: .08;
+			line-height: 1em;
+			position: absolute;
+			top: -70%;
+			left: .3em;
+			pointer-events: none;
+		}
+	}
+	#PVS__frame0{
+		position: relative;
+		margin: 0 auto;
+		opacity: 0;
+		background: none;
+		.title {
+			position: absolute;
+			margin: 0 auto;
+			text-align: center;
+		}
+		text-align: center;
+		padding: 0;
+		top: 100px;
+	}
+	#PVS__frame1{
+		text-align: center !important;
+		max-width: 600px;
+		padding-left: 0;
+		top: 1300px;
+	}
+	#PVS__frame2{ top: 2600px; }
+	#PVS__frame3{ top: 3700px; }
+	#PVS__frame4{ top: 4400px; }
+	#PVS__frame5{
+		top: 5200px;
+		margin: 0 auto;
+		text-align: center !important;
+		max-width: 600px;
+		padding-left: 0;
+	}
+	#PVS__frame6{ top: 5900px; }
+	#PVS__frame7{ top: 7200px; }
+	#PVS__frame8{ top: 8500px; }
+	#PVS__frame9{ top: 9300px; }
+	#PVS__frame10{ top: 10100px; }
+}
+
+
+/* -------------------------------
+* TESTERS
+*------------------------------- */
+	#tester-component{
+		.container{
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		.text-block, .img-block{ width: 50%; position: relative;}
+	}
+
+
+
+/* -------------------------------
+* TERMS
+*------------------------------- */
+	#terms-component{
+		h4{ font-size: 80px;}
+		.terms-item{
+			height: 95vh;
+			flex-direction: row;
+			text-align: left;
+		}
+		.terms-item__text p { max-width: 400px; }
+		#terms-item__1 .terms-item__img{ top: 40%; left: 15%; }
+		#terms-item__2 .terms-item__img{ top: 40%; left: 10%; }
+		#terms-item__3 .terms-item__img{ top: 40%; left: 70%; }
+		#terms-item__4 {
+			.terms-item__img{ top: 40%; left: 20%; }
+			.terms-item__text p { margin-left: 250px; }
+		}
+	}
+
+
+
+
+
+/* -------------------------------
+* PRODUCT
+*------------------------------- */
+	#product-component{
+		.product-img{
+			width: 50%;
+			margin-top: 5em;
+		}
+		.product-info{ width: 50% }
+		.container{
+			display: flex;
+			position: relative;
+			flex-direction: row;
+		}
+		ul.tabs-pills{ font-size: 20px }
+		table.product__table{ font-size: 16px }
+			.product__purchase-btn, .product__see-more-link{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+	}
+
+
+
+/* -------------------------------
+* PURCHASE MODAL
+*------------------------------- */
+	#purchase-modal{
+		padding: 5em;
+		form#purchase{
+			.purchase__delivery{
+				margin-top: 0em;
+				min-height: 100px;
+			}
+			.purchase__details {
+				margin-top: 0em;
+				width: 100%;
+				max-width: 800px;
+				.purchase__details-item{
+					display: inline-block;
+					width: 48%;
+					margin: 3em 1% 0 1%;
+				}
+			}
+		}
+	}
+
+
+
+/* -------------------------------
+* SPECIFICATION MODAL
+*------------------------------- */
+	#specification-modal{
+		padding: 6em;
+	}
+	#minirals-modal{
+		.table-col{ display: block }
+		table.minirals__table::first-child{ margin-right: 0 }
+	}
+
+
+
+
+/* -------------------------------
+* FOOTER
+*------------------------------- */
+	footer{
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 1em 3em;
+		a{
+			display: inline-block !important;
+			margin: 0 2em 0 0 !important;
+		}
+	}
+
+
+
+/* -------------------------------
+* PRELOADER
+*------------------------------- */
+	#preloader.preloader{
+		.preloader__counter{
+			top:50%;
+			font-size: 300px;
+			transform: translate(-50%, -20%);
+		}
+		.preloader__description{
+			top:50%;
+			font-size: 30px;
+			max-width: 500px;
+			transform: translate(-50%, -50%);
+			small{ font-size: 16px; }
+		}
+	}
+
+
+
+}
+
+
+
+
+
+

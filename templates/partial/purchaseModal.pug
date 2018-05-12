@@ -1,0 +1,125 @@
+#purchase-modal.modal
+	.modal__navigation
+		span.modal__navigation_back.closePurchaseModal
+			img(src="img/back.svg", alt="вернуться назад")
+			| Назад
+		span.modal__navigation_close.closePurchaseModal
+			img(src="img/close.svg", alt="закрыть окно")
+
+	form#purchase
+		.purchase__delivery
+			.purchase__delivery_description
+				p Поставьте галочку, чтобы заказать с установкой и доставкой на дом. При нашей установке даем пожизненную гарантию. 
+			.purchase__delivery_checkbox.checkbox
+				input#checkbox(type="checkbox" name="check" value="" )
+				label#checkbox-label(for="check")
+					span
+				p.check-label +<span id="delivey-and-setup-price">2000</span>₽
+
+		.purchase__details
+			.purchase__details-item
+				.select#city
+					select(name="city")
+						option#select-placeholder Ваш город
+						option(value="Москва") Москва
+						option(value="Московская область") Московская область
+						option(value="Санкт-Питербург") Санкт-Петербург
+						option(value="Екатеринбург") Екатеринбург
+						option(value="Новосибирск") Новосибирск
+						option(value="Нижний Новгород") Нижний Новгород
+						option(value="Казань") Казань
+						option(value="Челябинск") Челябинск
+						option(value="Омск") Омск
+						option(value="Самара") Самара
+						option(value="Ростов-на-Дону ") Ростов-на-Дону
+						option(value="Уфа ") Уфа
+						option(value="Красноярск ") Красноярск
+						option(value="Пермь ") Пермь
+						option(value="Воронеж ") Воронеж
+						option(value="Волгоград ") Волгоград
+						option(value="Краснодар ") Краснодар
+						option(value="Саратов ") Саратов
+						option(value="Тюмень ") Тюмень
+						option(value="Тольятти ") Тольятти
+						option(value="Ижевск ") Ижевск
+						option(value="Барнаул ") Барнаул
+						option(value="Ульяновск ") Ульяновск
+						option(value="Иркутск ") Иркутск
+						option(value="Хабаровск ") Хабаровск
+						option(value="Ярославль ") Ярославль
+						option(value="Владивосток ") Владивосток
+						option(value="Махачкала ") Махачкала
+						option(value="Томск ") Томск
+						option(value="Оренбург ") Оренбург
+						option(value="Кемерово ") Кемерово
+						option(value="Новокузнецк ") Новокузнецк
+						option(value="Рязань ") Рязань
+						option(value="Астрахань ") Астрахань
+						option(value="Пенза ") Пенза
+						option(value="Липецк ") Липецк
+						option(value="Киров ") Киров
+						<option disabled>────────────────────</option>
+						<option disabled>Только почтой, без установки</option>
+						<option disabled> Если вашего города нет в списке – выберете "другой" и напишите свой город в поле "адрес" </option>
+						<option disabled>────────────────────</option>
+						option(value="Екатеринбург ") Чебоксары
+						option(value="Курск ") Курск
+						option(value="Улан - Удэ ") Улан - Удэ
+						option(value="Тверь ") Тверь
+						option(value="Магнитогорск ") Магнитогорск
+						option(value="Сочи ") Сочи
+						option(value="Брянск ") Брянск
+						option(value="Владимир ") Владимир
+						option(value="Нижний Тагил ") Нижний Тагил
+						option(value="Чита") Чита
+						option(value="Калуга") Калуга
+						option(value="Смоленск") Смоленск
+						option(value="Волжский") Волжский
+						option(value="Курган") Архангельск
+						option(value="Череповец") Череповец
+						option(value="Орёл") Орёл
+						option(value="Саранск") Саранск
+						option(value="Вологда") Вологда
+						option(value="Якутск") Якутск
+						option(value="Владикавказ") Владикавказ
+						option(value="Подольск") Подольск
+						option(value="Мурманск") Архангельск
+						option(value="Грозный") Грозный
+						option(value="Тамбов") Тамбов
+						option(value="Стерлитамак") Стерлитамак
+						option(value="Петрозаводск") Петрозаводск
+						option(value="Кострома") Кострома
+						option(value="Нижневартовск") Нижневартовск
+						option(value="Новороссийск") Новороссийск
+						option(value="Йошкар-Ола") Йошкар-Ола
+						option(value="Таганрог") Таганрог
+						option(value="Комсомольск") Комсомольск
+						option(value="Сыктывкар") Сыктывкар
+						option(value="Нальчик") Нальчик
+						option(value="Нижнекамск") Нижнекамск
+						option(value="Шахты") Шахты
+						option(value="Дзержинск") Дзержинск
+						option(value="Братск") Братск
+						option(value="Орск") Орск
+						option(value="Ангарск") Ангарск
+						option(value="Энгельс") Энгельс
+						option(value="Благовещенск") Благовещенск
+						option(value="Старый Оскол") Старый Оскол
+						option(value="Великий Новгород") Великий Новгород
+						option(value="Другой") Другой
+
+			.purchase__details-item
+				input#adress(type="text" placeholder="Улица, дом, индекс")
+			.purchase__details-item
+				input#name(type="text" placeholder="ФИО получателя")
+			.purchase__details-item
+				input#email(type="text" placeholder="Email для квитанции")
+			.purchase__details-item
+				input#phone(type="text" placeholder="Контактный телефон")
+			.purchase__details-item.summary
+					p Всего к оплате <br>
+						span#summary-amount 17 999₽
+		.purchase__submit
+			p Мы отправим вам квитанцию с реквизитами для оплаты на email который вы указали в этой форме.
+			a.btn.btn-white Получить реквизиты
+			p.terms Нажимая эту кнопку вы подтверждаете, что ознакомлены и согласны с нашей <a href="privacy.html" target="_blank">политикой конфиденциальности</a>, <a href="/terms-and-conditions.html" target="_blank">правилами и условиями</a> сайта.

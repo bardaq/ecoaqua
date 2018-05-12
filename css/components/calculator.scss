@@ -1,0 +1,80 @@
+/*
+*
+*
+* INTRO
+*
+*
+*/
+@import '../settings/colors';
+
+#calculator-component{
+	color: white;
+	background: $blue;
+	padding-bottom: 5em;
+	transition: background, .7s, color .7s;
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+	.calculator {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.inputs{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.calculator__input-group{
+		max-width: 150px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding-right: .3em;
+	}
+	.calculator__input-group input{
+		color: #fff;
+		font-size: 2em;
+		line-height: 2em;
+		text-align: center;
+		max-width: 100px;
+	}
+	.calculator__input-group_people:after{
+		content: 'чел.';
+		position: absolute;
+		bottom: 45px;
+		right: 5px;
+		font-size: 13px;
+	}
+	.calculator__input-group_liters:after{
+		content: 'л.';
+		position: absolute;
+		bottom: 45px;
+		right: 15px;
+		font-size: 13px;
+	}
+	.calculator__input-group_price:after{
+		content: '₽';
+		position: absolute;
+		bottom: 45px;
+		right: 5px;
+		font-size: 13px;
+	}
+
+	.calculator, .calculator-description{ width: 100%; }
+	.result { margin-top: 2em; }
+
+	.calculator__result{
+		margin-top: 1em;
+		font-size: 40px;
+		font-weight: 800;
+	}
+	.calculator__result p {
+		max-width: 200px;
+	}
+}

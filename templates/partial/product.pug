@@ -1,0 +1,44 @@
+#product-component
+	.container
+		.product-img
+			img(src="img/filter.png", alt="фильтр обратного осмоса")
+		.product-info
+			h3 <span class="filter-parametr">EcoAqua F-92</span>
+			span#product__price.product__price
+				<strike><span id="filter-old-price" class="filter-parametr">15000</span></strike>&nbsp;&nbsp;
+				<b><span id="filter-price" class="filter-parametr">9999</span> ₽</b>
+			.product__tabs
+				p Выберите мощность
+				ul.tabs-pills
+					li.tab-pills__item(data-js="1") На одного
+						.remain Осталость <span class="remain-amount">21</span> шт.
+					li.tab-pills__item.active(data-js="2") На двоих
+						.remain Осталость <span class="remain-amount">11</span> шт.
+					li.tab-pills__item(data-js="3") На семью
+						.remain Осталость <span class="remain-amount">15</span> шт.
+
+			table.product__table
+				tr
+					td Скорость набора бака
+					td <span id="tank-load-speed" class="filter-parametr">15</span> минут
+				tr
+					td Нужно обслуживать
+					td Раз в <span id="support-interval" class="filter-parametr">1.5</span> года  
+				tr
+					td Ресурс фильтра
+					td <span id="filter-resource" class="filter-parametr">21 000</span> л.
+				tr
+					td Минирализатор
+					td <span id="mineralize-option" class="filter-parametr">есть</span>
+				tr
+					td Постфильтр с ионами серебра
+					td <span id="postfilter-option" class="filter-parametr">есть</span>
+				tr
+					td Габариты
+					td <span id="filter-size" class="filter-parametr">123х123х32</span>
+
+			.product__see-more-link.openSpecificationModal
+				img(src="img/paper-icon-white.svg", alt="спецификация фильтра обратного осмоса")
+				| Открыть подробную спецификацию
+			.product__purchase-btn
+				a.btn.btn-white.openPurchaseModal Оформить заказ
