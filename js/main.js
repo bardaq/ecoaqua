@@ -22,14 +22,15 @@ window.onload = function(){
 	setHostNameInText();
 	// antiLsep();
 	nav();
-	sectionTransitions();
+	//sectionTransitions();
 	emailSender();
 	if( url === '/' || url.includes('index.html') || url === '' ){
 		product();
 		modals();
 		calculator();
 		if ($(window).width() >= 768) {
-			document.getElementById('video').onloadeddata = function(){ productVideoStory() };
+			productVideoStory()
+			//document.getElementById('video').onloadeddata = function(){  };
 		}
 		smoothScroll();
 	}

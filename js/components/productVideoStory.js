@@ -9,7 +9,7 @@ export const productVideoStory = function() {
           vid = document.getElementById('video'),
           frameNumber = 0,
           playbackConst = 500,
-          containerHeight = ((Math.floor(vid.duration + 3) * playbackConst )-500) + "px";
+          containerHeight = ((Math.floor(vid.duration + 1) * playbackConst )-500) + "px";
     let firstFrame = 0;
     section.style.height = containerHeight;
 
@@ -22,7 +22,6 @@ export const productVideoStory = function() {
         $(vid).stop().animate({opacity: 1}, 300)
         $('#nav-desktop').addClass('blackText');
       })
-
       $(vid).fadeToggle("400");
       firstFrame = !firstFrame ? window.pageYOffset : firstFrame;
       window.addEventListener( 'scroll', function(e) {
