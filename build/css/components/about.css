@@ -1,0 +1,2 @@
+.fullwidth,.fullwidth .about{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;width:100%}.fullwidth{position:relative;height:100%;background:#fff}.fullwidth .about{-ms-flex-pack:center;justify-content:center;padding:2em 1em}.fullwidth .map-container{width:100%}.fullwidth .map-container #map{min-height:100vh;height:100%;width:100%}@media (min-width:800px){.fullwidth{-ms-flex-direction:row;flex-direction:row}.fullwidth .about{width:50%;padding:5em}.fullwidth .map-container{width:50%}}
+/*# sourceMappingURL=about.css.map */

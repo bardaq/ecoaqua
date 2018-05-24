@@ -1,5 +1,6 @@
 #calculator-component
 	.container
+		h2 Калькулятор экономии:
 		form.calculator
 			.inputs
 				.calculator__input-group.calculator__input-group_people
@@ -11,8 +12,7 @@
 				.calculator__input-group.calculator__input-group_price
 					label(for="calculator__peoples") Стоимость<br>литра:
 					input(type="text" value="40")#calculator__price
-			.calculator__result
+			.calculator__result Вы тратите на воду
 				include ../partial/counter.pug
-				p Столько вы тратите на воду в&nbsp;год.
 
-		p.calculator-description Введите, сколько человек в семье, сколько выпивают за день и стоимость литра воды. Стоит добавить, сколько воды еще уходит на приготовление еды.<br/><br/> Фильтр стоит до <b>15000 ₽</b> + расходники меняются раз в год за 2500 ₽. Посчитайте, насколько фильтр дешевле. При этом вы будете пить самую полезную воду из доступных в городских условиях!
+		p.calculator-description <b>А фильтр стоит 5000 ₽</b> + расходники меняются раз в год за 2500руб. При этом вы будете пить самую полезную воду из доступных в городских условиях!
