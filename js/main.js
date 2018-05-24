@@ -28,7 +28,9 @@ window.onload = function(){
 		product();
 		modals();
 		calculator();
-		if ($(window).width() >= 768) productVideoStory();
+		if ($(window).width() >= 768) {
+			document.getElementById('video').onloadeddata = function(){ productVideoStory() };
+		}
 		smoothScroll();
 	}
 }
