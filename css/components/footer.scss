@@ -1,5 +1,4 @@
 footer{
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -8,6 +7,7 @@ footer{
 	width: 100%;
 	padding: 2em 3em;
 	color: #273032;
+	z-index: 99;
 	font-size: 13px;
 	a{
 		display: block;

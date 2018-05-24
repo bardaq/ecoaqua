@@ -1,11 +1,12 @@
 @import '../settings/colors';
 #product-video-story-component{
-	display: none;
 	position: relative;
 	padding: 5em 0;
+	background: $blue;
 	color: white;
 	overflow: hidden;
 	height: 2000px;
+	transition: background, .7s, color .7s;
 	.title{
 		font-size: 2.3em;
 		letter-spacing: -2px;
@@ -20,7 +21,6 @@
 		text-align: left;
 		padding-left: .5em;
 		z-index: 999;
-		color: rgba(0,0,0,0.8);
 		.title{
 			display:inline;
 			margin: 0
@@ -48,19 +48,22 @@
 	}
 
 	#video-container {
-		z-index: 100;
-		position: fixed;
+		position: absolute;
 		margin: auto;
-		top: auto; right: auto; bottom:0; left: auto;
+		top:50px; left: -1px; bottom: auto; right: auto;
 		box-sizing: border-box;
 		width: 100%;
 		pointer-events: none;
 		video{
-			opacity: 0;
 			pointer-events: none;
-			display: none;
-			width: 100vw;
+			opacity: 0;
+			transition: opacity .7s;
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+			width: 100%;
 		}
+		.showVideo{ opacity: 1; }
 	}
 
 

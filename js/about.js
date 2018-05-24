@@ -3,6 +3,7 @@ $(document).ready( function ()  {
 	nav();
 })
 
+
 var map;
 function initialize() {
 	var mapOptions = {

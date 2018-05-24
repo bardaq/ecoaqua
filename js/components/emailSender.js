@@ -26,6 +26,7 @@ export function emailSender() {
 		if( email.length < 4 || !email.includes('@') ){ addErrorClass( $('#email') ) }
 		if( phone.length < 6 ){ addErrorClass( $('#phone') ) }
 
+		//reset
 		$('#city, #adress, #name, #email, #phone').on('click', function(){
 			if( $(this).hasClass('hasError') ){
 				$(this).removeClass('hasError')

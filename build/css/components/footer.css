@@ -1,2 +1,2 @@
-footer,footer a{color:#273032;font-size:13px}footer{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;background:#fff;width:100%;padding:2em 3em}footer a{display:block;text-align:center}
+footer,footer a{color:#273032;font-size:13px}footer{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;background:#fff;width:100%;padding:2em 3em;z-index:99}footer a{display:block;text-align:center}
 /*# sourceMappingURL=footer.css.map */

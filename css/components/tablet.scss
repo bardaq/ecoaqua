@@ -92,7 +92,7 @@
 * INTRO
 *------------------------------- */
 	#intro-component{
-		padding-top: 4em;
+		padding-top: 7em;
 		.container{
 			display: flex;
 			flex-direction: row;
@@ -116,96 +116,76 @@
 * CALCULATOR
 *------------------------------- */
 	#calculator-component{
-		.inputs{
+		.calculator__result{
+			width: 100%;
+			display: flex;
 			flex-direction: row;
-			justify-content: center;
 			align-items: center;
+			justify-items: center;
+			p { margin: 0 0 0 2em;}
 		}
-		&:after{
-	    width: 50vw;
-	    height: 50vw;
-	    top: 50%;
-	    left: 50%;
-	  }
-	  &:before{
-	    width: 90vw;
-	    height: 90vw;
-	    top: 50%;
-	    left: 50%;
-	  }
 	}
 
 
 /* -------------------------------
 * PRODUCT STORY
 *------------------------------- */
-	#product-video-story-component{
-
-		display: block;
-		padding: 5em 0;
-		#video-container {
-      video{
-       opacity: 0;
-       pointer-events: none;
-       display: none;
-       width: 100vw;
-       // min-height: 100vh;
-      }
-    }
-		.title{ font-size: 4em; }
-		.PVS__frame{
-			padding: 1em;
-			text-align: left !important;
-			padding-left: 10em;
-			max-width: 600px;
-			.step{
-				display: block;
-				font-size: 300px;
-				font-weight: 800;
-				opacity: .08;
-				line-height: 1em;
-				position: absolute;
-				top: -50%;
-				left: .3em;
-				pointer-events: none;
-			}
+#product-video-story-component{
+	padding: 5em 0;
+	.title{ font-size: 4em; }
+	.PVS__frame{
+		padding: 1em;
+		text-align: left !important;
+		padding-left: 10em;
+		max-width: 600px;
+		.step{
+			display: block;
+			font-size: 300px;
+			font-weight: 800;
+			opacity: .08;
+			line-height: 1em;
+			position: absolute;
+			top: -70%;
+			left: .3em;
+			pointer-events: none;
 		}
-		#PVS__frame0{
-			position: relative;
-			margin: 0 auto;
-			opacity: 0;
-			background: none;
-			.title {
-				position: absolute;
-				margin: 0 auto;
-				text-align: center;
-			}
-			text-align: center;
-			padding: 0;
-			top: 100px;
-		}
-		#PVS__frame1{
-			text-align: center !important;
-			max-width: 600px;
-			padding-left: 0;
-			top: 1100px;
-		}
-		#PVS__frame2{ top: 2000px; }
-		#PVS__frame3{ top: 3300px; }
-		#PVS__frame4{ top: 4000px; }
-		#PVS__frame5{
-			top: 5000px;
-			margin: 0 auto;
-			text-align: center !important;
-			max-width: 600px;
-			padding-left: 0;
-		}
-		#PVS__frame6{ top: 5600px; }
-		#PVS__frame7{ top: 7200px; }
-		#PVS__frame8{ top: 8000px; }
-		#PVS__frame9{ top: 9000px; }
-		#PVS__frame10{ top: 9600px; }
 	}
+	#PVS__frame0{
+		position: relative;
+		margin: 0 auto;
+		opacity: 0;
+		background: none;
+		.title {
+			position: absolute;
+			margin: 0 auto;
+			text-align: center;
+		}
+		text-align: center;
+		padding: 0;
+		top: 100px;
+	}
+	#PVS__frame1{
+		text-align: center !important;
+		max-width: 600px;
+		padding-left: 0;
+		top: 1300px;
+	}
+	#PVS__frame2{ top: 2600px; }
+	#PVS__frame3{ top: 3700px; }
+	#PVS__frame4{ top: 4400px; }
+	#PVS__frame5{
+		top: 5200px;
+		margin: 0 auto;
+		text-align: center !important;
+		max-width: 600px;
+		padding-left: 0;
+	}
+	#PVS__frame6{ top: 5900px; }
+	#PVS__frame7{ top: 7200px; }
+	#PVS__frame8{ top: 8500px; }
+	#PVS__frame9{ top: 9300px; }
+	#PVS__frame10{ top: 10100px; }
+}
 
 
 /* -------------------------------
@@ -221,18 +201,27 @@
 	}
 
 
+
 /* -------------------------------
-* TERMS SECTIONS
+* TERMS
 *------------------------------- */
 	#terms-component{
-		.container{ flex-direction: row; }
+		h4{ font-size: 80px;}
 		.terms-item{
+			height: 95vh;
+			flex-direction: row;
 			text-align: left;
-			align-items: start;
-			width: 50%;
-			padding: 0 1em;
+		}
+		.terms-item__text p { max-width: 400px; }
+		#terms-item__1 .terms-item__img{ top: 40%; left: 15%; }
+		#terms-item__2 .terms-item__img{ top: 40%; left: 10%; }
+		#terms-item__3 .terms-item__img{ top: 40%; left: 70%; }
+		#terms-item__4 {
+			.terms-item__img{ top: 40%; left: 20%; }
+			.terms-item__text p { margin-left: 250px; }
 		}
 	}
+
 
 
 
@@ -297,6 +286,7 @@
 		.table-col{ display: block }
 		table.minirals__table::first-child{ margin-right: 0 }
 	}
+
 
 
 

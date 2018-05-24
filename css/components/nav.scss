@@ -11,6 +11,7 @@ $start-scale : .3;
 $start-rot : 190deg;
 $mobile-menu-item-color: $white;
 $mobile-menu-item-color-hover: $white-70;
+
 $desktop-menu-item-color: $white;
 $desktop-menu-item-color-hover: $white-70;
 
@@ -127,9 +128,4 @@ $desktop-menu-item-color-hover: $white-70;
 				transform: scale(.9);
 				transition-duration: 0s;
 		}
-}
-
-.blackText a{
-	color: rgba(black, 0.8) !important;
-	border-color: rgba(black, 0.8) !important;
 }

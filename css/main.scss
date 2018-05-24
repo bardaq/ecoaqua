@@ -1,13 +1,25 @@
+////
+/// Import all files
+/// Order do matter
+///
+////
+
+// Generic
 @import 'generic/normalize';
+
+/// Settings
 @import 'settings/colors';
 @import 'settings/typography';
 @import 'settings/general';
 @import 'generic/reset';
 
+
+
+// Base
 @import 'components/links';
 @import 'components/forms';
 @import 'components/preloader';
-
+// Components
 @import 'components/nav';
 @import 'components/intro';
 @import 'components/calculator';
@@ -22,6 +34,7 @@
 
 @import 'components/about';
 
+//@media(min-width=n)
 @import 'components/tablet.scss';
 @import 'components/desktop.scss';
 

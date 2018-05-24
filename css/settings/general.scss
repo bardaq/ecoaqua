@@ -7,14 +7,38 @@
 */
 @import '../settings/colors';
 body,html{
+	background-color: $blue;
 	overflow-x: hidden;
-	background: #f9f9f9;
+}
+#body-main{ background: #ffffff}
+#container-color-transition{
+	background-color: #1297D6;
+	position: fixed;
+	width: 100%;
+	height: 100%;z-index: -1;
+	transition: all 1s;
+	&.blue{ background-color: #1297D6 !important; }
+	&.grey{ background-color: #f9f9f9 !important; }
+	&.white{ background-color: #ffffff !important; }
+	&.black{ background-color: black !important; }
+}
+.greyBg{
+	background-color: #f9f9f9 !important;
+	color: $black !important;
+}
+.blueBg{
+	background-color: #f9f9f9 !important;
+	color: #ffffff !important;
 }
 
 .container{
 	background: transparent;
 	padding: 0 3%;
 	overflow: hidden;
+}
+
+.simple-text-container{
+	padding: 1em;
 }
 
 #thankYouPage{
@@ -39,14 +63,4 @@ body,html{
 		opacity: .1;
 		transform: translate(-50%,-50%);
 	}
-}
-.background-blue{
-	display: block;
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 100vw !important;
-	height: 100vh !important;
-  background: linear-gradient(45deg, #1980B0, #0FA1E8);
-  pointer-events: none;
 }

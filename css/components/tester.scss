@@ -10,16 +10,15 @@
 #tester-component{
 	padding: 10em 0;
 	color: white;
-	position: relative;
+	background: $blue;
+	transition: background, .7s, color .7s;
 	.container{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-	.text-block{
-		width: 100%
-	}
+	.text-block{ width: 100% }
 	.img-block{
 		width: 100%;
 		position: relative;
