@@ -30,7 +30,6 @@ window.onload = function(){
 		calculator();
 		if ($(window).width() >= 768) {
 			productVideoStory()
-			//document.getElementById('video').onloadeddata = function(){  };
 		}
 		smoothScroll();
 	}

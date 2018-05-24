@@ -1,5 +1,9 @@
 @import '../settings/colors';
 #product-component{
+	&:focus{
+		outline: none;
+	}
+
 	padding-bottom: 10em;
 	color: white;
 	position: relative;

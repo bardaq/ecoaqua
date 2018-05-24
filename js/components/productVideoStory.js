@@ -9,7 +9,8 @@ export const productVideoStory = function() {
           vid = document.getElementById('video'),
           frameNumber = 0,
           playbackConst = 500,
-          containerHeight = ((Math.floor(vid.duration + 1) * playbackConst )-500) + "px";
+          duration = document.getElementById('video').duration * playbackConst,
+          containerHeight = (isNaN(duration) ? duration : 13000 ) + "px";
     let firstFrame = 0;
     section.style.height = containerHeight;
 
@@ -22,6 +23,7 @@ export const productVideoStory = function() {
         $(vid).stop().animate({opacity: 1}, 300)
         $('#nav-desktop').addClass('blackText');
       })
+
       $(vid).fadeToggle("400");
       firstFrame = !firstFrame ? window.pageYOffset : firstFrame;
       window.addEventListener( 'scroll', function(e) {
@@ -38,7 +40,19 @@ export const productVideoStory = function() {
     //.addIndicators({ name: 'videoStory', offset: '200' })
     .addTo(productVideoStoryController);
 
+    // Hide video when reach product section
+    const hideVideoOnReachProductSection = new ScrollMagic.Scene({
+      triggerElement: document.getElementById('product-component')
+    })
+    .on('enter', function(e){
+      $(vid).stop().animate({opacity: 0}, 300, function() {
+        $('#nav-desktop').removeClass('blackText');
+        $('.background-blue').stop().animate({opacity: 1}, 300);
+      })
+    })
+    .addTo(productVideoStoryController);
 
+    // Fade in of first title
     const step0Title = document.getElementById('PVS__frame0') ;
     const step0TitleScene = new ScrollMagic.Scene({
       triggerElement: step0Title,
@@ -47,7 +61,7 @@ export const productVideoStory = function() {
     .setTween(step0Title, {opacity: "1", ease: Linear.easeNone})
     .addTo(productVideoStoryController);
 
-
+    // Parallax of Big numbers .step in text
     if ($(window).width() >= 768) {
       const stepsSpans = document.querySelectorAll("span.step");
       for (var i=0; i<stepsSpans.length; i++) {
