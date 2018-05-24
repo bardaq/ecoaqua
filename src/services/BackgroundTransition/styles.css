@@ -1,0 +1,10 @@
+.background-transition {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #1980B0, #0FA1E8);
+  pointer-events: none;
+  z-index: 0; }

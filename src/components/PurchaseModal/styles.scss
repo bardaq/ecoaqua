@@ -1,0 +1,31 @@
+.modal-backdrop.show{
+	// background-color: red !important;
+	opacity: .8;
+}
+.modal-header{
+	border-bottom-color: rgba(255,255,255,.1)
+}
+#checkbox:after{
+	content: '+2000₽';
+	display: block;
+	position: absolute;
+	bottom: -2rem;
+	color: white;
+	font-size: .8em;
+	transform:translateX(-39%);
+
+}
+#summary-cost{
+	font-size: 2em;
+	border: none;
+	background: none;
+	text-align: right;
+	padding: 0;
+	font-weight: 800;
+}
+.modal-content{
+	border: none;
+	.btn-primary{
+		color: #11384B;
+	}
+}

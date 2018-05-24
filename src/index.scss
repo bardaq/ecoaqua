@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700&subset=cyrillic');
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.btn{
+	font-weight: 500;
+}
+.btn-primary{
+	color: $blue2;
+	&:hover, &:active, &:focus{
+		background: transparent;
+		color: white;
+		border-color: white;
+	}
+}
+.btn-outline-primary{
+	&:hover, &:active, &:focus{ color: $blue2; }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  position: relative;
+  color: white;
+}
